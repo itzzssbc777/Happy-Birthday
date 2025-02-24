@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>இனிய பிறந்தநாள் வாழ்த்துக்கள் ❤️</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+        body {
+            font-family: 'Parisienne', cursive;
+            text-align: center;
+            background: pink;
+            color: black;
+            padding: 20px;
+            overflow-x: hidden;
+            position: relative;
+        }
+        .container {
+            margin-top: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            font-size: 3rem;
+            text-shadow: 3px 3px 5px rgba(255, 0, 0, 0.7);
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px red; }
+            100% { text-shadow: 0 0 20px pink; }
+        }
+        p {
+            font-size: 1.5rem;
+            margin: 20px auto;
+            line-height: 1.8;
+            white-space: pre-line;
+            display: none;
+        }
+        .press-btn {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background: #ff4d4d;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .hidden-image {
+            display: none;
+            width: 350px;
+            height: auto;
+            border-radius: 20px;
+            margin-top: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 2s ease-in-out;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: scale(0.8); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        .big-heart {
+            font-size: 3rem;
+            color: red;
+            cursor: pointer;
+            margin-top: 30px;
+            display: inline-block;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+            100% { transform: scale(1); }
+        }
+        .message {
+            display: none;
+            font-size: 2rem;
+            color: #ff4d4d;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💖 இனிய பிறந்தநாள் வாழ்த்துக்கள் எனதுயிரே... 💖</h1>
+        <button class="press-btn" onclick="showImage()">Press Here</button>
+        <br>
+        <img src="C:\Users\lenovo\Documents\Arjun and aiswarya.jpg" class="hidden-image" id="loveImage">
+        <p id="loveText">💓 இனிய பிறந்தநாள் வாழ்த்துக்கள் எனதுயிரே... 💓
+
+💞 நீ பிறந்து 17 வருடங்கள் ஆகிவிட்டது 
+💞 உன் நினைவை ஏந்தி 3 வருடங்கள் கடந்தேன்....
+💞 அதே போல் உன்னையும் நம் காதலையும் ஏந்தி 
+💞 வாழ்வின் இறுதி வரை வாழ ஆசை படுகிறேன்....
+
+💘 உன் கைகளை என் கையில் ஏந்தி...
+💘 உன் பாத்தத்தை என் மடியில் ஏந்தி...
+💘 உன் இதயத்தை என் இதயத்தில் பூட்டி...
+💘 உன் பார்வையில் என்னை மூழ்கி...
+💘 உன் உயிரை என் உயிராய் நான் காக்கே...
+
+❤️ நீ பிறந்ததுக்கு வாழ்த்துக்கள்... ❤️
+
+💖 என்றும் உன் அன்புக்காக காத்திருப்பேன்... 💖
+
+💞 𝗡𝗮𝗮𝗻..... 💋💞</p>
+        <div class="big-heart" onclick="showMessage()">❤️</div>
+        <div class="message" id="message">💖 Be with me forever 💍💞</div>
+    </div>
+    <script>
+        function showImage() {
+            document.getElementById('loveImage').style.display = 'block';
+            document.getElementById('loveText').style.display = 'block';
+        }
+        function showMessage() {
+            document.getElementById('message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
